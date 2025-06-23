@@ -9,21 +9,20 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 This project is a multi-tenant SaaS platform built with Laravel. It is designed to allow a super admin to manage multiple tenants (companies/organizations), each with their own isolated data, users, and resources. The system uses the stancl/tenancy package to provide robust multi-tenancy features, including separate databases for each tenant.
 Key Features
-Super Admin Panel:
+###Super Admin Panel:
 Manage all tenants from a central dashboard.
 Create, edit, activate/deactivate, and delete tenants.
 View analytics, billing, logs, reports, and user management for all tenants.
-Tenant Management:
+###Tenant Management:
 Each tenant has its own subdomain (e.g., tenant1.yourapp.com).
 When a new tenant is created, a separate database is provisioned for them.
 Tenant-specific resources: appointments, staff, services, roles, permissions, users, and working hours.
-User Management:
+### User Management:
 Super admin can manage users across all tenants.
 Each tenant manages its own users, roles, and permissions.
-Automated Database Provisioning:
+###Automated Database Provisioning:
 When a tenant is created, the system automatically creates a new database, runs migrations, and seeds initial data for that tenant.
 This is handled manually in the controller to avoid transaction issues.
 Modern UI:
